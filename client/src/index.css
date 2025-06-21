@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(238, 83%, 60%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(188, 95%, 43%);
+  --secondary-foreground: hsl(211, 100%, 99%);
+  --accent: hsl(43, 96%, 48%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(238, 83%, 60%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(188, 95%, 43%);
+  --secondary-foreground: hsl(211, 100%, 99%);
+  --accent: hsl(43, 96%, 48%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-slate-50 text-slate-800;
+  }
+}
+
+/* Custom gradient backgrounds for personality type cards */
+.gradient-enfp { background: linear-gradient(135deg, #4F46E5, #06B6D4); }
+.gradient-infp { background: linear-gradient(135deg, #10B981, #059669); }
+.gradient-enfj { background: linear-gradient(135deg, #3B82F6, #06B6D4); }
+.gradient-infj { background: linear-gradient(135deg, #8B5CF6, #4F46E5); }
+.gradient-entp { background: linear-gradient(135deg, #F97316, #EF4444); }
+.gradient-intp { background: linear-gradient(135deg, #14B8A6, #10B981); }
+.gradient-entj { background: linear-gradient(135deg, #EAB308, #F97316); }
+.gradient-intj { background: linear-gradient(135deg, #64748B, #475569); }
+.gradient-esfp { background: linear-gradient(135deg, #EC4899, #F43F5E); }
+.gradient-isfp { background: linear-gradient(135deg, #059669, #14B8A6); }
+.gradient-esfj { background: linear-gradient(135deg, #EF4444, #EC4899); }
+.gradient-isfj { background: linear-gradient(135deg, #8B5CF6, #A855F7); }
+.gradient-estp { background: linear-gradient(135deg, #F59E0B, #EAB308); }
+.gradient-istp { background: linear-gradient(135deg, #84CC16, #10B981); }
+.gradient-estj { background: linear-gradient(135deg, #0EA5E9, #3B82F6); }
+.gradient-istj { background: linear-gradient(135deg, #4F46E5, #3B82F6); }
